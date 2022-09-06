@@ -1,28 +1,31 @@
 package by.itstep.myproject.window;
 
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
 import java.awt.HeadlessException;
+import java.awt.event.MouseEvent;
 
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JPasswordField;
+import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-import by.itstep.myproject.controller.ControllerButtonAdd;
 import by.itstep.myproject.controller.ControllerButtonAddDelete;
-import by.itstep.myproject.controller.ControllerButtonDelete;
+import by.itstep.myproject.controller.ControllerButtonArchive;
 import by.itstep.myproject.controller.ControllerButtonWriteOff;
 import by.itstep.myproject.model.DataBase;
 import by.itstep.myproject.model.GroupOfDrug;
-import by.itstep.myproject.model.Product;
+import by.itstep.myproject.model.User;
 
 public class StartWindow extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	private JButton btnAdd = new JButton("Удалить");
 	private JButton btnDelete = new JButton("Добавить");
@@ -33,16 +36,24 @@ public class StartWindow extends JFrame {
 	private JTextField textMassAnim = new JTextField(20);
 	private JTextField textDosage = new JTextField(20);
 
+	private JTextArea textArea = new JTextArea();
+
 	private MyComboBox comBox;
 	private MyComboBox comboBox2;
 	private MyComboBox comboBox3;
 
-	ControllerButtonAddDelete conAddDel = new ControllerButtonAddDelete();
+	JTabbedPane tabsLeft;
+	private User user;
+
+	ControllerButtonAddDelete conAddDelWindow = new ControllerButtonAddDelete();
+
 	ControllerButtonWriteOff conButWriteOff = new ControllerButtonWriteOff();
+
+	ControllerButtonArchive conButArchive = new ControllerButtonArchive();
 
 	public StartWindow(DataBase dataBase) throws HeadlessException {
 		super();
-		JTabbedPane tabsLeft = new JTabbedPane(JTabbedPane.TOP);
+		tabsLeft = new JTabbedPane(JTabbedPane.TOP);
 		tabsLeft.setBounds(20, 20, 300, 500);
 		JPanel panel = new JPanel();
 		panel.setLayout(null);
@@ -53,6 +64,16 @@ public class StartWindow extends JFrame {
 		comBox.addElement(GroupOfDrug.ANTIBIOTIC);
 		comBox.setPrototypeDisplayValue("very long element");
 		comBox.setMaximumRowCount(10);
+		comBox.addMouseListener(new MyMouseListener() {
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				int product = comBox.getSelectedIndex();
+
+				JOptionPane.showMessageDialog(comBox, dataBase.getProductOfIndex(product).toString());
+
+			}
+		});
 
 		comBox.setBounds(40, 40, 200, 20);
 		panel.add(comBox);
@@ -71,6 +92,16 @@ public class StartWindow extends JFrame {
 		comboBox2.setMaximumRowCount(10);
 		comboBox2.setSize(200, 20);
 		comboBox2.setBounds(40, 40, 200, 20);
+		comboBox2.addMouseListener(new MyMouseListener() {
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				int product = comBox.getSelectedIndex();
+
+				JOptionPane.showMessageDialog(comBox, dataBase.getProductOfIndex(product).toString());
+
+			}
+		});
 		panel2.add(comboBox2);
 
 		tabsLeft.addTab(String.format("Противопаразитарные ", 2), panel2);
@@ -89,6 +120,16 @@ public class StartWindow extends JFrame {
 		comboBox3.setMaximumRowCount(10);
 		comboBox3.setSize(200, 20);
 		comboBox3.setBounds(40, 40, 200, 20);
+		comboBox3.addMouseListener(new MyMouseListener() {
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				int product = comBox.getSelectedIndex();
+
+				JOptionPane.showMessageDialog(comBox, dataBase.getProductOfIndex(product).toString());
+
+			}
+		});
 		panel3.add(comboBox3);
 
 		JPanel basPan = new JPanel();
@@ -113,11 +154,17 @@ public class StartWindow extends JFrame {
 		basPan.add(labDosage);
 		basPan.add(textDosage);
 
+		textArea.setBounds(350, 220, 350, 300);
+		textArea.setLineWrap(true);
+		textArea.setWrapStyleWord(true);
+		add(new JScrollPane(textArea));
+
 		btnAdd.setBounds(25, 600, 120, 31);
 		btnDelete.setBounds(190, 600, 120, 31);
 		btnSpisanie.setBounds(400, 600, 120, 31);
 		btnArchive.setBounds(550, 600, 120, 31);
 
+		add(textArea);
 		add(btnAdd);
 		add(btnDelete);
 		add(btnSpisanie);
@@ -129,13 +176,20 @@ public class StartWindow extends JFrame {
 		setSize(800, 700);
 		setLocationRelativeTo(null);
 		setVisible(true);
-		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		conAddDel.setStartWindow(this);
-		conAddDel.setDataBase(dataBase);
+		conAddDelWindow.setStartWindow(this);
+		conAddDelWindow.setDataBase(dataBase);
 
-		btnAdd.addActionListener(conAddDel);
-		btnDelete.addActionListener(conAddDel);
+		btnAdd.addActionListener(conAddDelWindow);
+		btnDelete.addActionListener(conAddDelWindow);
+
+		conButArchive.setStartWindow(this);
+		btnArchive.addActionListener(conButArchive);
+
+		conButWriteOff.setStartWindow(this);
+		conButWriteOff.setDataBase(dataBase);
+		btnSpisanie.addActionListener(conButWriteOff);
 	}
 
 	public JButton getBtnAdd() {
@@ -144,7 +198,7 @@ public class StartWindow extends JFrame {
 
 	public void setBtnAdd(JButton btnAdd) {
 		this.btnAdd = btnAdd;
-		btnAdd.addActionListener(conAddDel);
+		btnAdd.addActionListener(conAddDelWindow);
 	}
 
 	public JButton getBtnDelete() {
@@ -153,7 +207,7 @@ public class StartWindow extends JFrame {
 
 	public void setBtnDelete(JButton btnDelete) {
 		this.btnDelete = btnDelete;
-		btnDelete.addActionListener(conAddDel);
+		btnDelete.addActionListener(conAddDelWindow);
 	}
 
 	public JButton getBtnSpisanie() {
@@ -171,6 +225,7 @@ public class StartWindow extends JFrame {
 
 	public void setBtnArchive(JButton btnArchive) {
 		this.btnArchive = btnArchive;
+		btnArchive.addActionListener(conButArchive);
 	}
 
 	public JTextField getTextNumAnim() {
@@ -197,14 +252,6 @@ public class StartWindow extends JFrame {
 		this.textDosage = textDosage;
 	}
 
-	public ControllerButtonWriteOff getConButWriteOff() {
-		return conButWriteOff;
-	}
-
-	public void setConButWriteOff(ControllerButtonWriteOff conButWriteOff) {
-		this.conButWriteOff = conButWriteOff;
-	}
-
 	public String getNumAnimals() {
 		return textNumAnim.getText();
 	}
@@ -227,6 +274,36 @@ public class StartWindow extends JFrame {
 
 	public void setComBox(MyComboBox comBox) {
 		this.comBox = comBox;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public JTabbedPane getTabsLeft() {
+		return tabsLeft;
+	}
+
+	public void setTabsLeft(JTabbedPane tabsLeft) {
+		this.tabsLeft = tabsLeft;
+	}
+
+	public void showError(String message) {
+		JOptionPane.showMessageDialog(null, message, message, JOptionPane.ERROR_MESSAGE);
+
+	}
+
+	public void getTextArea(String text) {
+		textArea.setText(text);
+	}
+
+	public int getElementComboBox() {
+
+		return comBox.getSelectedIndex();
 	}
 
 }

@@ -17,7 +17,9 @@ public class ControllerButtonLogin extends BaseController {
 		}
 		if (dataBaseUser.checkUser(login, password)) {
 			adminWindow.setVisible(false);
+			
 			StartWindow startWin = new StartWindow(dataBase);
+			startWin.setUser(dataBaseUser.getUser(login, password));
 			
 		} else {
 			adminWindow.showMessage("Неверный логин и/или пароль");

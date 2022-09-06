@@ -4,6 +4,7 @@ import java.awt.event.ActionListener;
 
 import by.itstep.myproject.model.DataBase;
 import by.itstep.myproject.model.DataBaseUser;
+import by.itstep.myproject.model.Record;
 import by.itstep.myproject.window.AddDeletWindow;
 import by.itstep.myproject.window.AdminWindow;
 import by.itstep.myproject.window.RegistrationWindow;
@@ -17,6 +18,8 @@ public abstract class BaseController implements ActionListener {
 	protected RegistrationWindow regWin;
 	protected DataBase dataBase;
 	protected DataBaseUser dataBaseUser;
+
+	
 
 	public RegistrationWindow getRegWin() {
 		return regWin;
@@ -65,5 +68,6 @@ public abstract class BaseController implements ActionListener {
 	public void setDataBaseUser(DataBaseUser dataBaseUser) {
 		this.dataBaseUser = dataBaseUser;
 	}
+
 
 }

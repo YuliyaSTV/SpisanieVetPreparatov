@@ -11,39 +11,31 @@ public class ControllerButtonAdd extends BaseController {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		
-		
-		String title = addDeletWindow.getTitle();
-		String diseas = addDeletWindow.getDiseas();
-		String activeSubstance = addDeletWindow.getActiveSubstance();
-		int oneUnit = 0;
-		String oneUnitStr = addDeletWindow.getOneUnit();
 		try {
-			oneUnit = Integer.parseInt(oneUnitStr);
-		} catch (NumberFormatException e1) {
-			addDeletWindow.showMessage("Неправильный формат строки!");
-		}
-		String numberUnitStr = addDeletWindow.getNumberUnit();
-		int numberUnit = 0;
-		try {
-			numberUnit = Integer.parseInt(numberUnitStr);
-		} catch (NumberFormatException e1) {
-			addDeletWindow.showMessage("Неправильный формат строки!");
-		}
+			String title = addDeletWindow.getTitle();
+			String diseas = addDeletWindow.getDiseas();
+			String activeSubstance = addDeletWindow.getActiveSubstance();
 
-		String measurement = addDeletWindow.getMeasurement();
-		String dosage = addDeletWindow.getDosage();
+			int oneUnit = Integer.parseInt(addDeletWindow.getOneUnit());
+			int numberUnit = Integer.parseInt(addDeletWindow.getNumberUnit());
 
-		String groupDrug = addDeletWindow.getGroupOfDrug();
-		GroupOfDrug result = GroupOfDrug.valueOf(groupDrug.toUpperCase());
+			String measurement = addDeletWindow.getMeasurement();
+			String dosage = addDeletWindow.getDosage();
 
-		if (title.isEmpty() || diseas.isEmpty() || activeSubstance.isEmpty() || oneUnitStr.isEmpty()
-				|| numberUnitStr.isEmpty() || measurement.isEmpty() || dosage.isEmpty()) {
-			addDeletWindow.showMessage("Не все строки заполнены !");
-		} else {
-			dataBase.addProduct(
-					new Product(result, title, diseas, activeSubstance, oneUnit, numberUnit, measurement, dosage));
-			addDeletWindow.showMessage("Успешно добавлен");
+			String groupDrug = addDeletWindow.getGroupOfDrug();
+			GroupOfDrug result = GroupOfDrug.valueOf(groupDrug.toUpperCase());
+
+			if (title.isEmpty() || diseas.isEmpty() || activeSubstance.isEmpty()
+					|| addDeletWindow.getOneUnit().isEmpty() || addDeletWindow.getNumberUnit().isEmpty()
+					|| measurement.isEmpty() || dosage.isEmpty()) {
+				addDeletWindow.showMessage("Не все строки заполнены !");
+			} else {
+				dataBase.addProduct(
+						new Product(result, title, diseas, activeSubstance, oneUnit, numberUnit, measurement, dosage));
+				addDeletWindow.showMessage("Успешно добавлен");
+			}
+		} catch (Exception e1) {
+			addDeletWindow.showMessage("Неверный формат строки"+" " + e1);
 		}
 	}
 

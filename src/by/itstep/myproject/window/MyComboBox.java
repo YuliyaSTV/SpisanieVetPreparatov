@@ -1,18 +1,19 @@
 package by.itstep.myproject.window;
 
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
 import by.itstep.myproject.model.DataBase;
 import by.itstep.myproject.model.GroupOfDrug;
+import by.itstep.myproject.model.Product;
 
 public class MyComboBox extends JComboBox<Object> {
-
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
 	private DataBase dataBase;
-    private StartWindow starWin;
+	private StartWindow starWin;
+
 	public MyComboBox(DataBase dataBase) {
 		super();
 		this.dataBase = dataBase;
@@ -49,4 +50,5 @@ public class MyComboBox extends JComboBox<Object> {
 		this.starWin = starWin;
 	}
 	
+
 }

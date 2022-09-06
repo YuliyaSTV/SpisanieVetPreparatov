@@ -1,9 +1,5 @@
 package by.itstep.myproject.window;
 
-
-import java.awt.Color;
-import java.awt.FlowLayout;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -17,6 +13,10 @@ import by.itstep.myproject.controller.ControllerButtonRegister;
 
 public class AdminWindow extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JButton btnLogin = new JButton("Войти");
 	private JButton btnRegister = new JButton("Регистрация");
 	private JTextField textUser = new JTextField(20);
@@ -27,21 +27,10 @@ public class AdminWindow extends JFrame {
 
 	public AdminWindow() {
 		super("Start");
-		
-		   
-//		BufferedImage imjLab = null;
-//		try {
-//			imjLab = ImageIO.read(new File("sourceImj/startWin.jpg"));
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-		JPanel panel = new JPanel();
 
-//		JLabel picLab = new JLabel(new ImageIcon(imjLab));
-//		panel.add(picLab);
+		JPanel panel = new JPanel();
 		panel.setLocale(null);
 		panel.setLayout(null);
-		
 
 		btnLogin.setBounds(25, 100, 120, 31);
 		btnRegister.setBounds(190, 100, 120, 31);
@@ -52,22 +41,19 @@ public class AdminWindow extends JFrame {
 		labUser.setBounds(5, 15, 95, 25);
 		JLabel labPass = new JLabel("Password ");
 		labPass.setBounds(5, 50, 95, 25);
-		
+
 		panel.add(labUser);
 		panel.add(textUser);
 		panel.add(labPass);
 		panel.add(textPass);
 		panel.add(btnLogin);
 		panel.add(btnRegister);
-		
-     
+
 		add(panel);
-		  
+
 		setSize(370, 200);
 		setLocationRelativeTo(null);
-		
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-
 	}
 
 	public String getUser() {
@@ -99,5 +85,4 @@ public class AdminWindow extends JFrame {
 		this.conButReg = butReg;
 		btnRegister.addActionListener(butReg);
 	}
-
 }

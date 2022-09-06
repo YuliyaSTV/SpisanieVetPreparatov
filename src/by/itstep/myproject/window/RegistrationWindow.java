@@ -83,6 +83,15 @@ public class RegistrationWindow extends JFrame {
 
 	}
 
+	public JButton getBtnSave() {
+		return btnSave;
+	}
+
+	public void setBtnSave(JButton btnSave) {
+		this.btnSave = btnSave;
+		btnSave.addActionListener(conButSaveUser);
+	}
+
 	public String getLogin() {
 		return textUser.getText();
 	}

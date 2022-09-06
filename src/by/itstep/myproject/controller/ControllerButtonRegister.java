@@ -8,8 +8,9 @@ public class ControllerButtonRegister extends BaseController {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+	
 		
 		RegistrationWindow regWin = new RegistrationWindow(dataBaseUser);
-		
+	
 	}
 }

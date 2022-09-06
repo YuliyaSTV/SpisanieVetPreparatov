@@ -3,7 +3,8 @@ package by.itstep.myproject.model;
 import java.util.ArrayList;
 import java.util.List;
 
-//для регистарции добавления, удаления и списания продуктов 
+//для регистрации кем, когда и сколько списано препарата  
+
 public class Journal {
 
 	List<Record> records = new ArrayList<>();

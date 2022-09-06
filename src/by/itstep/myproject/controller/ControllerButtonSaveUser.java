@@ -29,26 +29,13 @@ public class ControllerButtonSaveUser extends BaseController {
 		if (!password.equals(confirmPassword)) {
 			regWin.showMessage1("Пароли должны совпадать!");
 			return;
+			
+		} else {
+			dataBaseUser.addUser(new User(login, password, name, lastName));
+			regWin.showMessage1("Вы успешно зарегистрированы!");
+			
+
 		}
-		 dataBaseUser.addUser(new User(login, password, name, lastName));
-//		File file = new File("Users.txt");
-//		file.createNewFile();
-//
-//		try {
-//			FileOutputStream fos = new FileOutputStream("Users");
-//
-//		} catch (FileNotFoundException e1) {
-//
-//			e1.printStackTrace();
-//		}
-//
-//		ObjectOutputStream oos = new ObjectOutputStream(fos);
-//		
-//		oos.writeObject(new User(login, password, name, lastName));
-//		oos.flush();
-//		oos.close();
 
-		regWin.showMessage1("Вы успешно зарегистрированы!");
 	}
-
 }

@@ -9,9 +9,8 @@ public class ControllerButtonAddDelete extends BaseController {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
-	
-		AddDeletWindow addDelWin = new AddDeletWindow(dataBase);
-
+		AddDeletWindow addDelWindow = new AddDeletWindow(dataBase);
+		
 	}
-
+    
 }

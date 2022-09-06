@@ -125,24 +125,33 @@ public class Product {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Product [groupOfDrug=");
-		builder.append(groupOfDrug);
-		builder.append(", title=");
-		builder.append(title);
-		builder.append(", disease=");
-		builder.append(disease);
-		builder.append(", activeSubstance=");
-		builder.append(activeSubstance);
-		builder.append(", oneUnit=");
-		builder.append(oneUnit);
-		builder.append(", numberUnit=");
-		builder.append(numberUnit);
-		builder.append(", measurement=");
-		builder.append(measurement);
-		builder.append(", dosage=");
-		builder.append(dosage);
-		builder.append("]");
+		builder.append("Группа антибиотиков - ");
+		builder.append(groupOfDrug + "\n");
+		builder.append("коммерческое название - ");
+		builder.append(title + "\n");
+		builder.append("применение - ");
+		builder.append(disease + "\n");
+		builder.append("действующее вещество - ");
+		builder.append(activeSubstance + "\n");
+		builder.append("количество в единице - ");
+		builder.append(oneUnit + measurement + "\n");
+		builder.append("количество едениц - ");
+		builder.append(numberUnit + "\n");
+		builder.append("дозировка - ");
+		builder.append(dosage + "\n");
 		return builder.toString();
 	}
 
+	public int getAmountOfDrug(int numberOfAnimals, int massOfAnimal, int dose) {
+		int variableDoses = 10;
+		int quantityOfDrugWriteOff = (numberOfAnimals * massOfAnimal * dose) / variableDoses;
+		int amountOfDrug = numberUnit * oneUnit;
+		if (numberUnit > 0 && amountOfDrug > quantityOfDrugWriteOff) {
+			this.numberUnit = (amountOfDrug - quantityOfDrugWriteOff) / oneUnit;
+			return quantityOfDrugWriteOff;
+		} else {
+			return -1;
+		}
+
+	}
 }
