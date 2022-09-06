@@ -7,12 +7,19 @@ import java.io.IOException;
 import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
+
+import org.apache.log4j.Logger;
+
 import by.itstep.myproject.model.Record;
 
 public class ControllerButtonWriteOff extends BaseController {
 
+	private final static Logger LOGGER = Logger.getLogger(ControllerButtonWriteOff.class);
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
+
+		LOGGER.info("нажатие кнопки списание ветпрепаратов");
 
 		int numAnimals = Integer.parseInt(startWindow.getNumAnimals());
 		int massAnimals = Integer.parseInt(startWindow.getMassAnimal());
@@ -40,6 +47,7 @@ public class ControllerButtonWriteOff extends BaseController {
 					fos.close();
 				} catch (IOException e1) {
 					startWindow.showError(e1.getMessage());
+					LOGGER.error(e1);
 				}
 			}
 
@@ -48,6 +56,7 @@ public class ControllerButtonWriteOff extends BaseController {
 					file.createNewFile();
 				} catch (IOException e1) {
 					startWindow.showError(e1.getMessage());
+					LOGGER.error(e1);
 				}
 			}
 		}

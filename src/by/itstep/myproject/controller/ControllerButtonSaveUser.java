@@ -6,14 +6,20 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 
+import org.apache.log4j.Logger;
+
 import by.itstep.myproject.model.User;
 import by.itstep.myproject.window.AdminWindow;
 import by.itstep.myproject.window.RegistrationWindow;
 
 public class ControllerButtonSaveUser extends BaseController {
 
+	private final static Logger LOGGER = Logger.getLogger(ControllerButtonSaveUser.class);
+
 	@Override
 	public void actionPerformed(ActionEvent e) {
+
+		LOGGER.info("нажатие кнопки сохранения данных пользователя");
 
 		String login = regWin.getLogin();
 		String password = regWin.getPassword();
@@ -29,12 +35,12 @@ public class ControllerButtonSaveUser extends BaseController {
 		if (!password.equals(confirmPassword)) {
 			regWin.showMessage1("Пароли должны совпадать!");
 			return;
-			
+
 		} else {
 			dataBaseUser.addUser(new User(login, password, name, lastName));
-			regWin.showMessage1("Вы успешно зарегистрированы!");
-			
-
+			regWin.showMessage1("        Вы успешно зарегистрированы!\n "
+					+ "Для входа в программу введите ваш логин и пароль");
+			regWin.setVisible(false);
 		}
 
 	}

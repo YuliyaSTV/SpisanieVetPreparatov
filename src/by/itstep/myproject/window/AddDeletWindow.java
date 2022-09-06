@@ -12,7 +12,7 @@ import by.itstep.myproject.model.DataBase;
 
 public class AddDeletWindow {
 
-	// окно для добавления и удалиня препаратов из базы
+	// окно для добавления и удаления препаратов из базы
 
 	private JTextField textTitle = new JTextField(30);
 	private JTextField textDiseas = new JTextField(30);

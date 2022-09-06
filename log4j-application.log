@@ -1,0 +1,57 @@
+2022-09-06 15:59:09 INFO  Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 18:29:13 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 18:29:16 ERROR ControllerButtonRegister:16 - нажатие кнопки регистрации
+2022-09-06 18:30:52 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 18:30:53 ERROR ControllerButtonRegister:16 - нажатие кнопки регистрации
+2022-09-06 18:31:51 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 18:31:53 ERROR ControllerButtonRegister:16 - нажатие кнопки регистрации
+2022-09-06 18:35:52 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 18:35:54 ERROR ControllerButtonRegister:16 - нажатие кнопки регистрации
+2022-09-06 18:36:42 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 18:36:44 ERROR ControllerButtonRegister:16 - нажатие кнопки регистрации
+2022-09-06 18:37:27 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 18:37:29 ERROR ControllerButtonRegister:16 - нажатие кнопки регистрации
+2022-09-06 18:37:38 INFO  ControllerButtonSaveUser:22 - нажатие кнопки сохранения данных пользователя
+2022-09-06 18:37:45 INFO  ControllerButtonLogin:14 - нажатие проверки логина и пароля
+2022-09-06 18:39:48 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 18:39:55 INFO  ControllerButtonLogin:14 - нажатие проверки логина и пароля
+2022-09-06 18:39:57 ERROR ControllerButtonRegister:16 - нажатие кнопки регистрации
+2022-09-06 18:40:13 INFO  ControllerButtonSaveUser:22 - нажатие кнопки сохранения данных пользователя
+2022-09-06 18:40:28 INFO  ControllerButtonLogin:14 - нажатие проверки логина и пароля
+2022-09-06 18:40:46 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 18:40:47 ERROR ControllerButtonRegister:16 - нажатие кнопки регистрации
+2022-09-06 18:41:10 INFO  ControllerButtonSaveUser:22 - нажатие кнопки сохранения данных пользователя
+2022-09-06 18:41:17 ERROR ControllerButtonRegister:16 - нажатие кнопки регистрации
+2022-09-06 18:41:27 INFO  ControllerButtonLogin:14 - нажатие проверки логина и пароля
+2022-09-06 18:41:29 ERROR ControllerButtonRegister:16 - нажатие кнопки регистрации
+2022-09-06 18:41:48 INFO  ControllerButtonSaveUser:22 - нажатие кнопки сохранения данных пользователя
+2022-09-06 18:42:18 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 18:42:20 ERROR ControllerButtonRegister:16 - нажатие кнопки регистрации
+2022-09-06 18:42:31 INFO  ControllerButtonSaveUser:22 - нажатие кнопки сохранения данных пользователя
+2022-09-06 18:42:37 INFO  ControllerButtonLogin:14 - нажатие проверки логина и пароля
+2022-09-06 18:59:31 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 18:59:42 INFO  ControllerButtonLogin:14 - нажатие проверки логина и пароля
+2022-09-06 19:10:32 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 19:10:39 INFO  ControllerButtonLogin:14 - нажатие проверки логина и пароля
+2022-09-06 19:10:47 INFO  ControllerButtonLogin:14 - нажатие проверки логина и пароля
+2022-09-06 19:11:15 ERROR ControllerButtonAddDelete:17 - 
+2022-09-06 19:11:15 ERROR ControllerButtonAddDelete:17 - 
+2022-09-06 19:11:16 ERROR ControllerButtonAddDelete:17 - 
+2022-09-06 19:11:33 INFO  ControllerButtonDelete:14 - java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=Удалить,when=1662480693299,modifiers=Button1] on javax.swing.JButton[,280,400,120x31,alignmentX=0.0,alignmentY=0.5,border=javax.swing.plaf.BorderUIResource$CompoundBorderUIResource@448bfb96,flags=296,maximumSize=,minimumSize=,preferredSize=,defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Удалить,defaultCapable=true]
+2022-09-06 19:36:18 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 19:36:27 INFO  ControllerButtonLogin:14 - нажатие проверки логина и пароля
+2022-09-06 19:36:40 INFO  ControllerButtonWriteOff:23 - нажатие кнопки списание ветпрепаратов
+2022-09-06 19:36:51 INFO  ControllerButtonWriteOff:23 - нажатие кнопки списание ветпрепаратов
+2022-09-06 19:36:54 INFO  ControllerButtonWriteOff:23 - нажатие кнопки списание ветпрепаратов
+2022-09-06 19:41:47 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 20:21:38 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 20:21:44 INFO  ControllerButtonLogin:14 - нажатие проверки логина и пароля
+2022-09-06 22:14:59 ERROR Main:91 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 22:20:55 ERROR ControllerButtonRegister:16 - нажатие кнопки регистрации
+2022-09-06 22:21:26 INFO  ControllerButtonSaveUser:22 - нажатие кнопки сохранения данных пользователя
+2022-09-06 22:21:37 INFO  ControllerButtonLogin:14 - нажатие проверки логина и пароля
+2022-09-06 22:25:41 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 22:25:48 INFO  ControllerButtonLogin:14 - нажатие проверки логина и пароля
+2022-09-06 22:29:15 ERROR Main:88 - by.itstep.myproject.window.AdminWindow[frame0,498,264,370x200,layout=java.awt.BorderLayout,title=Start,resizable,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,8,31,354x161,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+2022-09-06 22:29:23 INFO  ControllerButtonLogin:14 - нажатие проверки логина и пароля
+2022-09-06 22:29:57 INFO  ControllerButtonWriteOff:22 - нажатие кнопки списание ветпрепаратов
